@@ -1,4 +1,5 @@
 homesick-castle
 ===============
 
-a keep for my home files
+Using https://github.com/technicalpickles/homesick to keep track of all my
+dotfiles.
