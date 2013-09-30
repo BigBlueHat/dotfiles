@@ -10,13 +10,14 @@ Bundle 'gmarik/vundle'
 
 " GitHub repos
 Bundle 'tpope/vim-fugitive'
-"Bundle 'airblade/vim-gitgutter'
+Bundle 'airblade/vim-gitgutter'
 "Bundle 'mhinz/vim-signify'
 "Bundle 'Townk/vim-autoclose'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'edsono/vim-matchit'
 "Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
 "Bundle 'scrooloose/syntastic'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
@@ -31,6 +32,8 @@ Bundle 'vim-scripts/php.vim-html-enhanced'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
 Bundle 'elzr/vim-json'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'editorconfig/editorconfig-vim'
 
 " Set filetype detection on, load plugins and indent.
 filetype plugin indent on
