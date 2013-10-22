@@ -63,7 +63,7 @@ nnoremap <F2> :set norelativenumber!<CR>
 " Set tab width to 4 spaces for python files
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
 " Use tabs (not spaces) for PHP files
-autocmd FileType php setlocal noexpandtab
+"autocmd FileType php setlocal noexpandtab
 " Shut off matchpairs so the "visual bell" doesn't ring every time you type ->
 autocmd FileType php setlocal matchpairs-=<:>
 
@@ -207,3 +207,6 @@ au BufNewFile,BufRead *.ctp set filetype=php
 au BufNewFile,BufRead *.mustache set filetype=html
 
 set colorcolumn=80
+
+" NERDTree mappings
+map <C-n> :NERDTreeToggle<CR>
