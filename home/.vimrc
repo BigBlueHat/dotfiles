@@ -24,6 +24,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'Lokaltog/vim-powerline'
 "Bundle 'chrisbra/NrrwRgn'
 "Bundle 'mileszs/ack.vim'
+Bundle 'rking/ag.vim'
 Bundle 'vim-scripts/grep.vim'
 "Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
@@ -34,6 +35,7 @@ Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
 Bundle 'elzr/vim-json'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'groenewege/vim-less'
 
 " Set filetype detection on, load plugins and indent.
 filetype plugin indent on
@@ -178,6 +180,11 @@ imap jj <Esc>:w<CR>
 imap jk <Esc>:w<CR>
 imap kj <Esc>:w<CR>
 
+" Set color scheme (t_Co=256 is necessary for 256 color terminals to work).
+set t_Co=256
+set background=dark
+colorscheme solarized
+
 " Set options for Zen Coding
 let g:user_zen_expandabbr_key = '<c-e>'
 let g:use_zen_complete_tag = 1
@@ -210,3 +217,6 @@ set colorcolumn=80
 
 " NERDTree mappings
 map <C-n> :NERDTreeToggle<CR>
+
+let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:agprg = 'ag --nogroup --nocolor --column'
