@@ -11,3 +11,4 @@ dotfiles.
   * brew install ag
 * [bash-completion](http://bash-completion.alioth.debian.org/)
   * brew install bash-completion
+* [Solarized for Terminal.app](https://github.com/tomislav/osx-terminal.app-colors-solarized)
