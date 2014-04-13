@@ -7,6 +7,7 @@ dotfiles.
 ## Dependencies
 
 * [Vundle](https://github.com/gmarik/vundle)
+* [EditorConfig](http://editorconfig.org/)
 * [Source Code Pro](http://sourceforge.net/projects/sourcecodepro.adobe/files/)
 * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
   * brew install ag
@@ -30,3 +31,7 @@ dotfiles.
 * [Github for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
   * paths are different than above, but ultimately the result is the same
+* [Chocolatey](http://chocolatey.org/)
+  * required for [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core)
+  * use `cmd` for installing Chocolatey
+  * use `PowerShell` for `cinst editorconfig.core`
