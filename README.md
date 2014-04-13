@@ -27,6 +27,7 @@ dotfiles.
 
 ## Windows
 
+* [VIM](http://www.vim.org/download.php)
 * [Console2](http://www.hanselman.com/blog/Console2ABetterWindowsCommandPrompt.aspx)
 * [Github for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
