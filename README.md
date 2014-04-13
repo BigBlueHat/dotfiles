@@ -19,6 +19,8 @@ dotfiles.
     $ gem install homesick
     $ homesick clone https://github.com/BigBlueHat/dotfiles.git
     $ homesick symlink
+    $ # install Vundle (if you haven't)
+    $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     $ vi # be sure that loads VIM
     $ # then :BundleInstall ...and wait.
 
