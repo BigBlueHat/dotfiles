@@ -183,6 +183,7 @@ imap kj <Esc>:w<CR>
 " Set color scheme (t_Co=256 is necessary for 256 color terminals to work).
 set t_Co=256
 set background=dark
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 " Set options for Zen Coding
