@@ -21,3 +21,10 @@ dotfiles.
     $ homesick symlink
     $ vi # be sure that loads VIM
     $ # then :BundleInstall ...and wait.
+
+## Windows
+
+* [Console2](http://www.hanselman.com/blog/Console2ABetterWindowsCommandPrompt.aspx)
+* [Github for Windows](https://windows.github.com/)
+* [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
+  * paths are different than above, but ultimately the result is the same
