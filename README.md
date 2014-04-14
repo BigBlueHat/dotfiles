@@ -28,11 +28,12 @@ dotfiles.
 ## Windows
 
 * [VIM](http://www.vim.org/download.php)
-* [Console2](http://www.hanselman.com/blog/Console2ABetterWindowsCommandPrompt.aspx)
-* [Github for Windows](https://windows.github.com/)
-* [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
-  * paths are different than above, but ultimately the result is the same
 * [Chocolatey](http://chocolatey.org/)
   * required for [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core)
   * use `cmd` for installing Chocolatey
   * use `PowerShell` for `cinst editorconfig.core`
+* [ConsoleZ](https://github.com/cbucher/console#consolez)
+  * `cinst ConsoleZ`
+* [Github for Windows](https://windows.github.com/)
+* [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
+  * paths are different than above, but ultimately the result is the same
