@@ -34,6 +34,7 @@ dotfiles.
   * use `PowerShell` for `cinst editorconfig.core`
 * [ConsoleZ](https://github.com/cbucher/console#consolez)
   * `cinst ConsoleZ`
+* [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
 * [Github for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
   * paths are different than above, but ultimately the result is the same
