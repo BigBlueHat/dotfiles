@@ -38,3 +38,8 @@ dotfiles.
 * [Github for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
   * paths are different than above, but ultimately the result is the same
+* [Ruby](http://rubyinstaller.org/downloads/)
+  * required for `homesick` (though `homesick symlink` doesn't work on Windows...)
+* [Python](https://www.python.org/downloads/windows/)
+* [py2exe](http://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/py2exe-0.6.9.win32-py2.7.exe/download)
+  * needed for [couchapp.py](http://github.com/couchapp/couchapp)
