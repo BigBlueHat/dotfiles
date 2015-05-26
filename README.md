@@ -34,12 +34,12 @@ dotfiles.
   * [ag - the_silver_searcher](https://github.com/ggreer/the_silver_searcher/wiki/Windows) - `cinst ag`
   * [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core) - `cinst editorconfig.core`
   * [ConsoleZ](https://github.com/cbucher/console#consolez) - `cinst ConsoleZ`
+  * [Ruby](http://rubyinstaller.org/downloads/) - `cinst ruby`
+    * [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
 * [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
 * [GitHub for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
   * `C:\Windows\SysWOW64\cmd.exe /c ""C:\Program Files (x86)\Git\bin\bash.exe" --login -i"`
-* [Ruby](http://rubyinstaller.org/downloads/)
-  * required for `homesick` (though `homesick symlink` doesn't work on Windows...)
 * [Python](https://www.python.org/downloads/windows/)
 * [py2exe](http://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/py2exe-0.6.9.win32-py2.7.exe/download) - grab the correct 32 or 64-bit edition per your OS ([re: StackOverflow](http://stackoverflow.com/questions/11288923/cannot-install-py2exe-with-python-2-7))
   * needed for [couchapp.py](http://github.com/couchapp/couchapp)
