@@ -45,6 +45,9 @@ dotfiles.
   * needed for [couchapp.py](http://github.com/couchapp/couchapp)
 * [Node.js](http://nodejs.org/)
 * [WinMerge](http://winmerge.org/)
+* Maybe...
+  * https://github.com/ipython/ipython/wiki/Cookbook:-Using-IPython-with-Console2
+  * [WinMerge as mergetool](https://gist.github.com/shawndumas/6158524)
 
 ## Design
  - [Greenshot](http://getgreenshot.org/)
