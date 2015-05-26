@@ -27,13 +27,11 @@ dotfiles.
 
 ## Windows
 
-* [VIM](http://www.vim.org/download.php)
-* [Chocolatey](http://chocolatey.org/)
-  * required for [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core)
-  * use `cmd` for installing Chocolatey
-  * use `PowerShell` for `cinst editorconfig.core`
-* [ConsoleZ](https://github.com/cbucher/console#consolez)
-  * `cinst ConsoleZ`
+* [Chocolatey](http://chocolatey.org/) - use PowerShell (Run as Administrator) when installing
+  * [VIM](http://www.vim.org/) - `cinst vim`
+  * [ag - the_silver_searcher](https://github.com/ggreer/the_silver_searcher/wiki/Windows) - `cinst ag`
+  * [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core) - `cinst editorconfig.core`
+  * [ConsoleZ](https://github.com/cbucher/console#consolez) - `cinst ConsoleZ`
 * [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
 * [GitHub for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
