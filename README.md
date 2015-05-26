@@ -27,6 +27,8 @@ dotfiles.
 
 ## Windows
 
+### Development
+
 * [Chocolatey](http://chocolatey.org/) - use PowerShell (Run as Administrator) when installing
   * [VIM](http://www.vim.org/) - `cinst vim`
   * [ag - the_silver_searcher](https://github.com/ggreer/the_silver_searcher/wiki/Windows) - `cinst ag`
@@ -41,3 +43,19 @@ dotfiles.
 * [Python](https://www.python.org/downloads/windows/)
 * [py2exe](http://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/py2exe-0.6.9.win32-py2.7.exe/download) - grab the correct 32 or 64-bit edition per your OS ([re: StackOverflow](http://stackoverflow.com/questions/11288923/cannot-install-py2exe-with-python-2-7))
   * needed for [couchapp.py](http://github.com/couchapp/couchapp)
+
+## Design
+ - [Greenshot](http://getgreenshot.org/)
+ - [Inkscape](http://inkscape.org/)
+
+## Other
+ - [CutePDF](http://www.cutepdf.com/Products/CutePDF/writer.asp)
+
+## [1st5](http://bigbluehat.com/1st5)
+ - [OBS](http://obsproject.com/)
+   - setup for 1920x1080, mp4 file output, leave audio at AAC (Movie Maker doesn't like MP3 in MP4s)
+   - setup Monitor recording as that's easiest
+   - short cuts: ``Shift+` `` for start recording; `` ` `` for stop.
+ - [VLC](http://www.videolan.org/vlc/)
+ - [Windows Movie Maker](http://windows.microsoft.com/en-US/Windows-Live/movie-maker)
+   - doesn't come with Windows 8...apparently.
