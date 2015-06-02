@@ -29,6 +29,7 @@ dotfiles.
 
 ### Development
 
+* [7-Zip](http://www.7-zip.org/) - for `tar.gz` files
 * [Chocolatey](http://chocolatey.org/) - use PowerShell (Run as Administrator) when installing
   * [VIM](http://www.vim.org/) - `cinst vim`
   * [ag - the_silver_searcher](https://github.com/ggreer/the_silver_searcher/wiki/Windows) - `cinst ag`
