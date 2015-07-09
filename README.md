@@ -41,6 +41,7 @@ dotfiles.
 * [GitHub for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
   * `C:\Windows\SysWOW64\cmd.exe /c ""C:\Program Files (x86)\Git\bin\bash.exe" --login -i"`
+* [mktemp](http://gnuwin32.sourceforge.net/packages/mktemp.htm)...no joke...
 * [Python](https://www.python.org/downloads/windows/)
 * [py2exe](http://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/py2exe-0.6.9.win32-py2.7.exe/download) - grab the correct 32 or 64-bit edition per your OS ([re: StackOverflow](http://stackoverflow.com/questions/11288923/cannot-install-py2exe-with-python-2-7))
   * needed for [couchapp.py](http://github.com/couchapp/couchapp)
