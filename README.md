@@ -33,6 +33,7 @@ dotfiles.
 * [Chocolatey](http://chocolatey.org/) - use PowerShell (Run as Administrator) when installing
   * [VIM](http://www.vim.org/) - `cinst vim`
   * [ag - the_silver_searcher](https://github.com/ggreer/the_silver_searcher/wiki/Windows) - `cinst ag`
+  * [BIND tools](https://chocolatey.org/packages/bind-toolsonly) - `cinst bind-toolsonly` (mostly for `dig`)
   * [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core) - `cinst editorconfig.core`
   * [ConsoleZ](https://github.com/cbucher/console#consolez) - `cinst ConsoleZ`
   * [Ruby](http://rubyinstaller.org/downloads/) - `cinst ruby`
