@@ -1,47 +1,42 @@
-set nocompatible
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-" Use Vundle to manage plugins and such.
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
 
-" GitHub repos
-Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
-"Bundle 'mhinz/vim-signify'
-"Bundle 'Townk/vim-autoclose'
-Bundle 'kien/ctrlp.vim'
-Bundle 'mattn/zencoding-vim'
-Bundle 'edsono/vim-matchit'
-"Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-"Bundle 'scrooloose/syntastic'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/vim-powerline'
-"Bundle 'chrisbra/NrrwRgn'
-"Bundle 'mileszs/ack.vim'
-Bundle 'rking/ag.vim'
-Bundle 'vim-scripts/grep.vim'
-"Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'vim-scripts/php.vim-html-enhanced'
-Bundle 'bkad/CamelCaseMotion'
-Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
-Bundle 'elzr/vim-json'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'groenewege/vim-less'
+Plugin 'tpope/vim-fugitive'
+"Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'rking/ag.vim'
+Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'plasticboy/vim-markdown'
+"Plugin 'elzr/vim-json'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'posva/vim-vue'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'isRuslan/vim-es6'
+Plugin 'leafgarland/typescript-vim'
 
-" Set filetype detection on, load plugins and indent.
-filetype plugin indent on
-
-" Use vim defaults.
-set nocompatible
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 " A couple options to make vim-powerline work correctly.
 set laststatus=2
@@ -132,6 +127,7 @@ augroup drupal
 augroup END
 
 autocmd BufRead,BufNewFile *.json set filetype=json
+autocmd BufRead,BufNewFile *.jsonld set filetype=json
 " Conceal hides double quotes, so JSON is more legible...but looks invalid
 autocmd FileType json setlocal conceallevel=0
 
@@ -184,6 +180,7 @@ imap kj <Esc>:w<CR>
 set t_Co=256
 set background=dark
 let g:solarized_termtrans = 1
+let g:solarized_termcolors=256
 colorscheme solarized
 
 " Set options for Zen Coding
@@ -220,25 +217,4 @@ set colorcolumn=80
 map <C-n> :NERDTreeToggle<CR>
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
-let g:agprg = 'ag --nogroup --nocolor --column'
-
-" Escape/unescape & < > HTML entities in range (default current line).
-" From: http://vim.wikia.com/wiki/HTML_entities
-function! HtmlEntities(line1, line2, action)
-  let search = @/
-  let range = 'silent ' . a:line1 . ',' . a:line2
-  if a:action == 0  " must convert &amp; last
-    execute range . 'sno/&lt;/</eg'
-    execute range . 'sno/&gt;/>/eg'
-    execute range . 'sno/&amp;/&/eg'
-  else              " must convert & first
-    execute range . 'sno/&/&amp;/eg'
-    execute range . 'sno/</&lt;/eg'
-    execute range . 'sno/>/&gt;/eg'
-  endif
-  nohl
-  let @/ = search
-endfunction
-command! -range -nargs=1 Entities call HtmlEntities(<line1>, <line2>, <args>)
-noremap <silent> \h :Entities 0<CR>
-noremap <silent> \H :Entities 1<CR>
+let g:ag_prg = 'ag --nogroup --nocolor --column'
