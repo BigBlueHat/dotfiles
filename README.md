@@ -47,6 +47,7 @@ dotfiles.
 * [py2exe](http://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/py2exe-0.6.9.win32-py2.7.exe/download) - grab the correct 32 or 64-bit edition per your OS ([re: StackOverflow](http://stackoverflow.com/questions/11288923/cannot-install-py2exe-with-python-2-7))
   * needed for [couchapp.py](http://github.com/couchapp/couchapp)
 * [Node.js](http://nodejs.org/)
+  * `npm install --global --production windows-build-tools` [because Windows...](https://github.com/nodejs/node-gyp#on-windows)
 * [WinMerge](http://winmerge.org/)
 * Maybe...
   * https://github.com/ipython/ipython/wiki/Cookbook:-Using-IPython-with-Console2
