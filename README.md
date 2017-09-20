@@ -8,7 +8,7 @@ dotfiles.
 
 * [Vundle](https://github.com/gmarik/vundle)
 * [EditorConfig](http://editorconfig.org/)
-* [Source Code Pro](http://sourceforge.net/projects/sourcecodepro.adobe/files/)
+* [Source Code Pro](https://github.com/adobe-fonts/source-code-pro/releases)
 * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
   * brew install ag
 * [bash-completion](http://bash-completion.alioth.debian.org/)
