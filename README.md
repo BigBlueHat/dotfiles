@@ -36,7 +36,7 @@ dotfiles.
   * [BIND tools](https://chocolatey.org/packages/bind-toolsonly) - `cinst bind-toolsonly` (mostly for `dig`)
   * [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core) - `cinst editorconfig.core`
   * [ConsoleZ](https://github.com/cbucher/console#consolez) - `cinst ConsoleZ`
-  * [Ruby](http://rubyinstaller.org/downloads/) - `cinst ruby`
+  * [Ruby](http://rubyinstaller.org/downloads/) - `cinst ruby ruby2.devkit msys2` + `ridk.cmd install` (from `cmd`)
     * [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
 * [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
 * [GitHub for Windows](https://windows.github.com/)
