@@ -19,9 +19,14 @@ Plugin 'plasticboy/vim-markdown'
 "Plugin 'elzr/vim-json'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'posva/vim-vue'
-Plugin 'vim-syntastic/syntastic'
+"Plugin 'vim-syntastic/syntastic'
 Plugin 'isRuslan/vim-es6'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'junegunn/vim-emoji'
+Plugin 'yegappan/greplace'
+Plugin 'aklt/plantuml-syntax'
+Plugin 'w0rp/ale'
+Plugin 'niklasl/vim-rdf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,6 +42,10 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" (File) Encodings
+set encoding=utf-8
+set fileencoding=utf-8
 
 " A couple options to make vim-powerline work correctly.
 set laststatus=2
@@ -105,6 +114,8 @@ set nrformats=hex " Allow incrementing and decrementing numbers that start with 
 " Configuration for autocompletion. http://robots.thoughtbot.com/post/27041742805/vim-you-complete-me
 set complete=.,b,u,]
 set wildmode=longest,list:longest
+" Emoji Autocomplete via https://github.com/junegunn/vim-emoji/
+set completefunc=emoji#complete
 
 " Use relative line numbers
 " set relativenumber
@@ -195,11 +206,19 @@ let g:ctrlp_persistent_input = 0
 let g:ctrlp_clear_cache_on_exit = 0
 
 " Configure the Syntastic plugin for automatic syntax checking.
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"let g:syntastic_enable_signs=1
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
+
+" Configure ale (replaces syntastic)
+let b:ale_linters = ['eslint', 'tidy']
 
 " Configure vim-gist
 let g:gist_clip_command = 'xclip -selection clipboard'
@@ -215,6 +234,7 @@ set colorcolumn=80
 
 " NERDTree mappings
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:ag_prg = 'ag --nogroup --nocolor --column'
