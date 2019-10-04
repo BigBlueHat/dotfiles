@@ -38,6 +38,7 @@ dotfiles.
   * [ConsoleZ](https://github.com/cbucher/console#consolez) - `cinst ConsoleZ`
   * [Ruby](http://rubyinstaller.org/downloads/) - `cinst ruby msys2` + `cinst ruby2.devkit` + `ridk.cmd install`
     * [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
+    * Charlock fails on Windows...unless: `gem install charlock_holmes -- --with-icui18nlib=icuin --with-icudatalib=icudt`
 * [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
 * [GitHub for Windows](https://windows.github.com/)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
