@@ -40,11 +40,11 @@ dotfiles.
     * core `cinst ruby msys2` + `cinst ruby2.devkit` + `C:\tools\ruby26\bin\ridk.cmd install`
     * [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
     * Charlock fails on Windows...unless: `gem install charlock_holmes -- --with-icui18nlib=icuin --with-icudatalib=icudt`
-* [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
-* [GitHub for Windows](https://windows.github.com/)
-  * [Turn on directory colors (ls/ll)](https://stackoverflow.com/questions/14049896/setting-colors-for-ls-in-git-bash-on-windows)
+* [git](https://git-scm.com) - `cinst git`
+* [Turn on directory colors (ls/ll)](https://stackoverflow.com/questions/14049896/setting-colors-for-ls-in-git-bash-on-windows)
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
   * `C:\Windows\SysWOW64\cmd.exe /c ""C:\Program Files (x86)\Git\bin\bash.exe" --login -i"`
+  * [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
 * [mktemp](http://gnuwin32.sourceforge.net/packages/mktemp.htm)...no joke...
 * [Python](https://www.python.org/downloads/windows/)
 * [py2exe](http://sourceforge.net/projects/py2exe/files/py2exe/0.6.9/py2exe-0.6.9.win32-py2.7.exe/download) - grab the correct 32 or 64-bit edition per your OS ([re: StackOverflow](http://stackoverflow.com/questions/11288923/cannot-install-py2exe-with-python-2-7))
