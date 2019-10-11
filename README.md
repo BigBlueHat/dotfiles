@@ -36,7 +36,8 @@ dotfiles.
   * [BIND tools](https://chocolatey.org/packages/bind-toolsonly) - `cinst bind-toolsonly` (mostly for `dig`)
   * [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core) - `cinst editorconfig.core`
   * [ConsoleZ](https://github.com/cbucher/console#consolez) - `cinst ConsoleZ`
-  * [Ruby](http://rubyinstaller.org/downloads/) - `cinst ruby msys2` + `cinst ruby2.devkit` + `ridk.cmd install`
+  * [Ruby](http://rubyinstaller.org/downloads/)
+    * core `cinst ruby msys2` + `cinst ruby2.devkit` + `C:\tools\ruby26\bin\ridk.cmd install`
     * [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
     * Charlock fails on Windows...unless: `gem install charlock_holmes -- --with-icui18nlib=icuin --with-icudatalib=icudt`
 * [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
