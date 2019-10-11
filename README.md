@@ -42,6 +42,8 @@ dotfiles.
     * Charlock fails on Windows...unless: `gem install charlock_holmes -- --with-icui18nlib=icuin --with-icudatalib=icudt`
 * [git](https://git-scm.com) - `cinst git`
 * [Turn on directory colors (ls/ll)](https://stackoverflow.com/questions/14049896/setting-colors-for-ls-in-git-bash-on-windows)
+* [node](https://nodejs.org/) - `cinst nodejs`
+* [yarn](https://yarnpkg.com/) - `cinst yarn`
 * [Console2 + GH4W](http://nickberardi.com/using-git-bash-in-console2/)
   * `C:\Windows\SysWOW64\cmd.exe /c ""C:\Program Files (x86)\Git\bin\bash.exe" --login -i"`
   * [Solzarized for Console 2 & Z](https://github.com/stevenharman/console2-solarized)
