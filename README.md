@@ -39,7 +39,9 @@ dotfiles.
   * [Ruby](http://rubyinstaller.org/downloads/)
     * core `cinst ruby msys2` + `cinst ruby2.devkit` + `C:\tools\ruby26\bin\ridk.cmd install`
     * [Jekyll](http://jekyllrb.com/) - `gem install jekyll`
-    * Charlock fails on Windows...unless: `gem install charlock_holmes -- --with-icui18nlib=icuin --with-icudatalib=icudt`
+    * Charlock fails on Windows...[unless...](https://github.com/brianmario/charlock_holmes/issues/84#issuecomment-478335029)
+      * From CMD or PowerShell: `ridk exec pacman -S mingw-w64-x86_64-icu icu-devel icu`
+      * `gem install charlock_holmes -- --with-icui18nlib=icuin --with-icudatalib=icudt`
 * [git](https://git-scm.com) - `cinst git`
 * [Turn on directory colors (ls/ll)](https://stackoverflow.com/questions/14049896/setting-colors-for-ls-in-git-bash-on-windows)
 * [node](https://nodejs.org/) - `cinst nodejs`
