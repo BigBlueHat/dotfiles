@@ -67,6 +67,7 @@ dotfiles.
 
 ## Other
  - [CutePDF](http://www.cutepdf.com/Products/CutePDF/writer.asp)
+ - [USBDLM](https://www.uwe-sieber.de/usbdlm_e.html) - for managing drive letters of SD cards and external hard drives
 
 ## [1st5](http://bigbluehat.com/1st5)
  - [OBS](http://obsproject.com/)
