@@ -1,8 +1,8 @@
-homesick-castle
-===============
+# dotfiles
 
-Using https://github.com/technicalpickles/homesick to keep track of all my
-dotfiles.
+I used to use https://github.com/technicalpickles/homesick to keep track of all my
+dotfiles, but these days I mostly keep notes here about my various "dotfiles" and
+track what install steps I do (too frequently...) for each laptop I setup.
 
 ## Dependencies
 
