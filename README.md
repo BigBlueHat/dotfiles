@@ -61,6 +61,61 @@ track what install steps I do (too frequently...) for each laptop I setup.
   * https://github.com/ipython/ipython/wiki/Cookbook:-Using-IPython-with-Console2
   * [WinMerge as mergetool](https://gist.github.com/shawndumas/6158524)
 
+Windows Terminal [config](https://aka.ms/terminal-documentation):
+```json
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{00000000-0000-0000-ba54-000000000002}",
+
+    "profiles":
+    [
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false
+        },
+        {
+            // Make changes here to the cmd.exe profile
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "hidden": false
+        },
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
+        },
+        {
+            "guid": "{00000000-0000-0000-ba54-000000000002}",
+            "colorScheme" : "Campbell",
+            "commandline" : "\"%PROGRAMFILES%\\git\\usr\\bin\\bash.exe\" -i -l",
+            "cursorColor" : "#FFFFFF",
+            "cursorShape" : "bar",
+            "fontFace" : "Source Code Pro",
+            "fontSize" : 12,
+            "historySize" : 9001,
+            "icon" : "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+            "name" : "Bash",
+            "padding" : "0, 0, 0, 0",
+            "snapOnInput" : true,
+            "startingDirectory" : "%USERPROFILE%"
+        }
+    ],
+
+    // Add custom color schemes to this array
+    "schemes": [],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
+```
+
 ## Design
  - [Greenshot](http://getgreenshot.org/)
  - [Inkscape](http://inkscape.org/)
