@@ -33,8 +33,8 @@ track what install steps I do (too frequently...) for each laptop I setup.
 * [7-Zip](http://www.7-zip.org/) - for `tar.gz` files
 * [Chocolatey](http://chocolatey.org/) - use PowerShell (Run as Administrator) when installing
 * [git](https://git-scm.com) - `cinst git` as much for bash as for git
+* [Windows Terminal](https://github.com/Microsoft/Terminal) - `cinst microsoft-windows-terminal` + [config below](#windows-terminal-config)
 * [Turn on directory colors (ls/ll)](https://stackoverflow.com/questions/14049896/setting-colors-for-ls-in-git-bash-on-windows)
-
 * [BIND tools](https://chocolatey.org/packages/bind-toolsonly) - `cinst bind-toolsonly` (mostly for `dig`)
 * cmake - `cinst cmake -f --installargs 'ADD_CMAKE_TO_PATH=User'`
 * [mktemp](http://gnuwin32.sourceforge.net/packages/mktemp.htm)...no joke...
@@ -43,6 +43,7 @@ track what install steps I do (too frequently...) for each laptop I setup.
 * [VIM](http://www.vim.org/) - `cinst vim`
 * [ag - the_silver_searcher](https://github.com/ggreer/the_silver_searcher/wiki/Windows) - `cinst ag`
 * [EditorConfig Core](http://chocolatey.org/packages/editorconfig.core) - `cinst editorconfig.core`
+* [mdcat](https://github.com/lunaryorn/mdcat) - `cinst mdcat` for making Markdown look nice in a console
 
 Previous used...
 * [ConsoleZ](https://github.com/cbucher/console#consolez) - `cinst ConsoleZ`
@@ -89,7 +90,7 @@ Previous used...
 
 ## Configurations
 
-Windows Terminal [config](https://aka.ms/terminal-documentation):
+### Windows Terminal [config](https://aka.ms/terminal-documentation):
 ```json
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
