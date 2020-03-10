@@ -37,7 +37,7 @@ track what install steps I do (too frequently...) for each laptop I setup.
 * [Turn on directory colors (ls/ll)](https://stackoverflow.com/questions/14049896/setting-colors-for-ls-in-git-bash-on-windows)
 * [BIND tools](https://chocolatey.org/packages/bind-toolsonly) - `cinst bind-toolsonly` (mostly for `dig`)
 * cmake - `cinst cmake -f --installargs 'ADD_CMAKE_TO_PATH=User'`
-* [mktemp](http://gnuwin32.sourceforge.net/packages/mktemp.htm)...no joke...
+* make (for Makefiles) - `cinst make --source=cygwin` (comes with loads of other stuff too; add it to `PATH`)
 
 #### Editors, etc.
 * [VIM](http://www.vim.org/) - `cinst vim`
