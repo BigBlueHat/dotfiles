@@ -19,7 +19,7 @@ Plugin 'plasticboy/vim-markdown'
 "Plugin 'elzr/vim-json'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'posva/vim-vue'
-"Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'isRuslan/vim-es6'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'junegunn/vim-emoji'
@@ -27,6 +27,13 @@ Plugin 'yegappan/greplace'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'w0rp/ale'
 Plugin 'niklasl/vim-rdf'
+Plugin 'AndrewRadev/linediff.vim'
+Plugin 'mrk21/yaml-vim'
+Plugin 'axvr/org.vim'
+Plugin 'cespare/vim-toml'
+Plugin 'tpope/vim-liquid'
+Plugin 'bling/vim-airline'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,6 +57,10 @@ set fileencoding=utf-8
 " A couple options to make vim-powerline work correctly.
 set laststatus=2
 let g:Powerline_symbols = 'compatible'
+
+" Enhance the airline ride
+let g:airline_powerline_fonts = 1
+let g:airline_detect_paste = 1
 
 " Tabs, Spaces and Indentation.
 set expandtab " Use spaces for tabs.
@@ -217,7 +228,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 "let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_eslint_exec = './node_modules/.bin/eslint'
 
-" Configure ale (replaces syntastic)
+" Configure ale (replaces syntastic...maybe)
 let b:ale_linters = ['eslint', 'tidy']
 
 " Configure vim-gist
@@ -229,6 +240,11 @@ nmap <leader>P <Plug>yankstack_substitute_older_paste
 
 au BufNewFile,BufRead *.ctp set filetype=php
 au BufNewFile,BufRead *.mustache set filetype=html
+au BufNewFile,BufRead *.mjs set filetype=javascript
+
+" add yaml stuffs - https://lornajane.net/posts/2018/vim-settings-for-working-with-yaml
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 set colorcolumn=80
 
@@ -238,3 +254,21 @@ let NERDTreeShowHidden=1
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:ag_prg = 'ag --nogroup --nocolor --column'
+
+" Escape/Unescape HTML
+function! HtmlEscape()
+  silent %s/\%V&/\&amp;/eg
+  silent %s/\%V</\&lt;/eg
+  silent %s/\%V>/\&gt;/eg
+endfunction
+
+function! HtmlUnEscape()
+  silent %s/\%V&lt;/</eg
+  silent %s/\%V&gt;/>/eg
+  silent %s/\%V&amp;/\&/eg
+endfunction
+vnoremap <silent> <leader>h :<C-U>call HtmlEscape()<CR>
+vnoremap <leader>m :!pandoc -f markdown -t html<CR>
+vnoremap // y/\V<C-r>=escape(@",'/\')<CR><CR>
+
+let g:vim_markdown_folding_disabled = 1
