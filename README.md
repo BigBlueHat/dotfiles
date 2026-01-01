@@ -27,6 +27,9 @@ track what install steps I do (too frequently...) for each laptop I setup.
 
 ## Windows
 
+#### File systems
+* [TrID - File Identifier](https://www.mark0.net/soft-trid-e.html)
+
 ### Development
 
 #### Foundations
@@ -91,7 +94,7 @@ Previous used...
 ## Configurations
 
 ### Windows Terminal [config](https://aka.ms/terminal-documentation):
-```json
+```jsonc
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
